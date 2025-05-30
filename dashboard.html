@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learning DevOps - Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Navbar -->
+  <nav class="bg-blue-700 p-4 text-white flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Learning DevOps</h1>
+    <button class="bg-blue-900 px-3 py-1 rounded hover:bg-blue-800">Logout</button>
+  </nav>
+
+  <!-- Dashboard -->
+  <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+    <!-- Courses -->
+    <div class="bg-white rounded-2xl shadow-lg p-5">
+      <h2 class="text-xl font-semibold mb-3">📚 Courses</h2>
+      <ul class="list-disc pl-5 space-y-2">
+        <li>CI/CD with Jenkins</li>
+        <li>Docker & Kubernetes</li>
+        <li>AWS for DevOps</li>
+      </ul>
+    </div>
+
+    <!-- Progress -->
+    <div class="bg-white rounded-2xl shadow-lg p-5">
+      <h2 class="text-xl font-semibold mb-3">📈 Progress</h2>
+      <p>Last Activity: Today</p>
+      <div class="w-full bg-gray-200 rounded h-4 mt-2">
+        <div class="bg-green-500 h-4 rounded w-2/3"></div>
+      </div>
+      <p class="mt-1 text-sm">66% completed</p>
+    </div>
+
+    <!-- Materials -->
+    <div class="bg-white rounded-2xl shadow-lg p-5">
+      <h2 class="text-xl font-semibold mb-3">📄 Materials</h2>
+      <ul class="space-y-2">
+        <li><a href="#" class="text-blue-600 hover:underline">Docker Cheatsheet (PDF)</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">K8s Architecture Slides</a></li>
+      </ul>
+    </div>
+
+    <!-- AI Assistant -->
+    <div class="bg-white rounded-2xl shadow-lg p-5">
+      <h2 class="text-xl font-semibold mb-3">🤖 AI Assistant</h2>
+      <p>Need help? Ask your DevOps AI agent!</p>
+      <input type="text" placeholder="Ask a question..." class="w-full mt-3 px-4 py-2 border rounded bg-gray-100" />
+    </div>
+
+    <!-- Innovations -->
+    <div class="bg-white rounded-2xl shadow-lg p-5">
+      <h2 class="text-xl font-semibold mb-3">🚀 Innovations</h2>
+      <ul class="list-disc pl-5">
+        <li>Gamification & badges</li>
+        <li>DevOps Lab simulator</li>
+        <li>Interview preparation module</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
